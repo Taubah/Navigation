@@ -17,7 +17,13 @@ struct ContentView: View {
                 NavigationLink(destination: SecondView()) {
                     Text("Take me to a new view!")
                 }
-
+                .toolbar{
+                    ToolbarItemGroup(placement: .status) {
+                        NavigationLink(destination: SecondView()) {
+                            Text("Take me to a new view!")
+                        }
+                    }
+                }
 
 //
 //                NavigationLink(destination: Text
